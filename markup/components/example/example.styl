@@ -1,28 +1,41 @@
 body {
     height 2500px
 }
+.promo-wrap
+    position: relative;
+    overflow hidden
+    height: 100vh;
+    width: 100%;
 .promo
+    position: relative;
+    top: -600px;
     display -webkit-flex
     display -moz-flex
     display -ms-flex
     display -o-flex
     display flex
-    height 100vh;
+    height 127vw
+    width: 127%;
+    left: 50%;
+    transform translateX(-50%)
     background-color #d5d5d5
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     &__inner
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
         margin auto
-        width 25vw
-        height 25vw
+        width 700px
+        height 700px
         border-radius 50%
         background-color #fff
         &.fade-in
-           animation opacity 1s linear
+            background-color: #f50;
+        img
+           margin: auto;
 .elem
     height 500px
     background-color cyan
-@keyframes opacity
-    0%
-        opacity 1
-    100%
-        opacity 0
-

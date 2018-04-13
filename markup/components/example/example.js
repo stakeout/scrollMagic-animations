@@ -1,11 +1,16 @@
 var controller = new ScrollMagic.Controller();
 
+
+  // build tween
+  var tween = TweenMax.to(".promo", 1, {css: {scale: 0}, ease: Linear.easeNone});
+
 var ourScene = new ScrollMagic.Scene({
-    triggerElement: '#promo',
-    triggerHook: 0.2,
-    duration: '300px'
+    triggerElement: '.elem',
+    triggerHook: 0.9,
+    duration: '100%'
 })
 .setClassToggle('#promo', 'fade-in')
+.setTween(tween)
 .addIndicators({
     name: 'fade scene',
     colorTrigger: 'black',
