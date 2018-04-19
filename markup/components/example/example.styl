@@ -3,20 +3,20 @@ body {
 }
 .promo-wrap
     position: relative;
-    overflow hidden
     height: 100vh;
     width: 100%;
+    overflow hidden
 .promo
-    position: relative;
-    top: -600px;
+    position: absolute;
     display -webkit-flex
     display -moz-flex
     display -ms-flex
     display -o-flex
     display flex
-    height 127vw
-    width: 127%;
+    height 150vw
+    width: 150%;
     left: 50%;
+    bottom -50%
     transform translateX(-50%)
     background-color #d5d5d5
     border-bottom-left-radius: 50%;
@@ -27,7 +27,10 @@ body {
         display: -ms-flex;
         display: -o-flex;
         display: flex;
-        margin auto
+        position: absolute;
+        top 5%
+        left: 50%;
+        transform translateX(-50%)
         width 700px
         height 700px
         border-radius 50%
@@ -38,4 +41,7 @@ body {
            margin: auto;
 .elem
     height 500px
-    background-color cyan
+    &__title
+        margin: 0;
+        font-size: 55px;
+        text-align: center;
